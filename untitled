@@ -1,0 +1,12 @@
+if (postalcode.length === 5 || (postalcode.length === 10 && postalcode.charAt(5) === '-')) {
+		alert(postalcode+" is a pretty nice area I'm sure. You should go to your local park today")
+}
+
+else {
+	alert("Please enter your postal code in either the xxxxx or xxxxx-xxxx format")
+	var postalcode= prompt("Please enter postal code", "xxxxx or xxxxx-xxxx")
+}
+while (postalcode.length !== 5 || (postalcode.length !== 10 && postalcode.charAt(5) !== '-')) {
+		alert("Please enter your postal code in either the xxxxx or xxxxx-xxxx format")
+		var postalcode= prompt("Please enter postal code", "xxxxx or xxxxx-xxxx")
+	}
